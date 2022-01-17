@@ -1,0 +1,13 @@
+{
+    "name": "maquette_p3_oc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+        "prefix": "postcss ./public/css/style.css -w --use autoprefixer -d ./public/css/prefixed/"
+    },
+    "author": "Tom Texier",
+    "license": "ISC",
+    "browserslist": "last 4 versions"
+}
