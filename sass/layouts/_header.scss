@@ -1,8 +1,28 @@
 header#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    a {
+        text-decoration: none;
+    }
+    .logo {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2em;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        object {
+            width: 40px;
+            margin-right: 10px;
+        }
     }
     nav ul {
         list-style-type: none;
@@ -12,12 +32,23 @@ header#main-header {
         li {
             a {
                 text-transform: uppercase;
-                text-decoration: none;
-                padding: 10px;
+                padding: 30px 10px;
+                transition: .4s;
+                color: #fff;
+                display: block;
             }
             &:not(:last-child) {
                 margin-right: 20px;
             }
+        }
+    }
+
+    &.sticky {
+        .logo {
+            color: $color-primary;
+        }
+        nav li a {
+            padding: 20px 10px;
         }
     }
 }
