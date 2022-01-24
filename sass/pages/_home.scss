@@ -81,7 +81,7 @@ main.home .presentation {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 55% 45% 70% 30% / 60% 30% 70% 40%;
+            border-radius: 55% 45% 70% 30% / 60% 50% 50% 40%;
             animation: 15s linear infinite alternate bubble1;
             z-index: 2;
             position: relative;
@@ -106,10 +106,10 @@ main.home .presentation {
 
 @keyframes bubble1 {
     0% {
-        border-radius: 55% 45% 70% 30% / 60% 30% 70% 40%;
+        border-radius: 55% 45% 70% 30% / 60% 50% 50% 40%;
     }
     50% {
-        border-radius: 20% 80% 30% 70% / 30% 25% 75% 70%;
+        border-radius: 20% 80% 30% 70% / 30% 30% 70% 70%;
     }
     100% {
         border-radius: 44% 56% 67% 33% / 78% 66% 34% 22%;
@@ -125,5 +125,168 @@ main.home .presentation {
     }
     100% {
         border-radius: 44% 56% 67% 33% / 78% 66% 34% 22%;
+    }
+}
+
+section.programme {
+    position: relative;
+    padding: 50px 0;
+    margin: 10vh 0;
+
+    .background {
+        background: $color-primary;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50px 0 0 50px;
+        width: 65%;
+        height: 80vh;
+        z-index: -1;
+
+        &.fixed {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &.bottom {
+            bottom: -200px;
+            top: unset;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+
+        .films {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 900px;
+            justify-content: space-between;
+
+            &__item {
+                width: calc(33% - 15px);
+                height: 400px;
+                margin-bottom: 30px;
+                border-radius: 20px;
+                overflow: hidden;
+                position: relative;
+
+                > div {
+                    position: absolute;
+                    top: 100%;
+                    transition: .4s ease;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgba(0, 0, 0, .5);
+
+                    .add-to-basket {
+                        background-color: $color-primary;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        padding: 7px;
+                        cursor: pointer;
+                        position: absolute;
+                        bottom: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+
+                        span {
+                            position: absolute;
+                            background-color: $color-secondary;
+                            top: -3px;
+                            right: -3px;
+                            border-radius: 50px;
+                            width: 12px;
+                            height: 12px;
+                            padding: 2px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff;
+                            font-size: 16px;
+                            box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+                        }
+                    }
+                }
+
+                &:hover > div {
+                    top: 0;
+                }
+
+                &:nth-child(3n+2) {
+                    transform: translateY(50%);
+                }
+
+                &__image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: relative;
+                    z-index: -1;
+                }
+
+                &__title {
+                    margin: 0;
+                    color: #fff;
+                    position: relative;
+                    font-size: 18px;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100px;
+                        height: 1px;
+                        background-color: #fff;
+                    }
+                }
+
+                &__date {
+                    margin-top: 20px;
+                    color: #fff;
+
+                    &__day {
+                        font-weight: 600;
+                    }
+
+                    &__hour {
+                        background-color: $color-secondary;
+                        padding: 2px 10px;
+                        width: max-content;
+                        margin: 10px auto 0;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#contactez-nous {
+    margin-top: 300px;
+    
+    .container {
+        display: flex;
+    }
+
+    .map {
+        width: 50%;
+    }
+
+    .contact-form {
+        width: 50%;
     }
 }

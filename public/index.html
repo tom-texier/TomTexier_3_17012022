@@ -13,23 +13,23 @@
 
     <header id="main-header">
         <div class="container">
-            <a href="/" class="logo">
+            <a href="./index.html" class="logo">
                 <object data="./img/tickets.svg" type="image/svg+xml"></object>
                 Les films de plein air
             </a>
             <nav>
                 <ul>
                     <li>
-                        <a href="/">Accueil</a>
+                        <a href="./index.html">Accueil</a>
                     </li>
                     <li>
-                        <a href="/programme.html">Programme</a>
+                        <a href="#au-programme">Programme</a>
                     </li>
                     <li>
                         <a href="/actualites.html">Actualités</a>
                     </li>
                     <li>
-                        <a href="/contactez-nous.html">Contactez-nous</a>
+                        <a href="#contactez-nous">Contactez-nous</a>
                     </li>
                 </ul>
             </nav>
@@ -40,15 +40,15 @@
         </div>
     </header>
     <main class="home">
-        <div class="banner">
+        <section class="banner">
             <img src="./img/banniere.jpeg" alt="Banniere" class="banner__image">
             <div class="banner__content container">
                 <h1 class="banner__content__title"><span>Bienvenue au</span>Festival des films de plein air</h1>
-                <a class="banner__content__button" href="">Voir la programmation</a>
+                <a class="banner__content__button" href="#au-programme">Voir la programmation</a>
             </div>
-        </div>
+        </section>
 
-        <div class="presentation">
+        <section class="presentation">
             <div class="container">
                 <div class="presentation__image">
                     <img src="./img/popcorn.jpg" alt="popcorn">
@@ -59,9 +59,255 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quas dolores quidem quod iste exercitationem repellendus harum culpa illum tempora dolor doloremque laborum quaerat, non, labore voluptatem. Minima ipsam voluptatem animi repellat consequuntur, magni enim ipsa quas. Maiores nesciunt, repellat corrupti soluta esse recusandae consequatur sunt consectetur, optio neque accusamus.</p>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <section class="programme" id="au-programme">
+            <div class="background"></div>
+            <div class="container">
+                <div class="films">
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/fightclub.jpeg" alt="Affiche de Fight Club">
+                        <div>
+                            <h4 class="films__item__title">Fight Club</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    5 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    18h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/theartist.jpeg" alt="Affiche de The Artist">
+                        <div>
+                            <h4 class="films__item__title">The Artist</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    5 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    20h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/pulpfiction.jpeg" alt="Affiche de Pulp Fiction">
+                        <div>
+                            <h4 class="films__item__title">Pulp Fiction</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    5 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    22h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/forestgump.jpeg" alt="Affiche de Forest Gump">
+                        <div>
+                            <h4 class="films__item__title">Forest Gump</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    6 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    18h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/polisse.jpeg" alt="Affiche de Polisse">
+                        <div>
+                            <h4 class="films__item__title">Polisse</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    6 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    20h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/larafle.jpeg" alt="Affiche de La Rafle">
+                        <div>
+                            <h4 class="films__item__title">La Rafle</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    6 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    22h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/lepianiste.jpeg" alt="Affiche de Le Pianiste">
+                        <div>
+                            <h4 class="films__item__title">Le Pianiste</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    7 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    18h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/titanic.jpeg" alt="Affiche de Titanic">
+                        <div>
+                            <h4 class="films__item__title">Titanic</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    7 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    20h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/leparrain.jpeg" alt="Affiche de Le Parrain">
+                        <div>
+                            <h4 class="films__item__title">Le Parrain</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    7 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    22h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/intouchables.jpeg" alt="Affiche de Intouchables">
+                        <div>
+                            <h4 class="films__item__title">Intouchables</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    8 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    18h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/shining.jpeg" alt="Affiche de Shining">
+                        <div>
+                            <h4 class="films__item__title">Shining</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    8 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    20h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="films__item">
+                        <img class="films__item__image" src="./img/affiches/roubaixunelumiere.jpeg" alt="Affiche de Roubaix, une lumière">
+                        <div>
+                            <h4 class="films__item__title">Roubaix, une lumière</h4>
+                            <div class="films__item__date">
+                                <div class="films__item__date__day">
+                                    8 août 2022
+                                </div>
+                                <div class="films__item__date__hour">
+                                    22h
+                                </div>
+                            </div>
+                            <div class="add-to-basket">
+                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contactez-nous">
+            <div class="container">
+                <div class="contact-form">
+                    <form action="">
+                        <h2>Contactez-nous</h2>
+                    </form>
+                </div>
+                <div class="map">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
 
     </main>
+    
+    <script src="./js/sticky-header.js"></script>
+    <script src="./js/programme.js"></script>
+    <script src="./js/map.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhiPm8nM6-LmSGitirshiTStZ8tcHiNJs&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 
 </body>
 
