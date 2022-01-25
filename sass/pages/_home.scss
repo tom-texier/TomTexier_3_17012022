@@ -135,9 +135,9 @@ section.programme {
 
     .background {
         background: $color-primary;
-        position: absolute;
-        top: 0;
-        right: 0;
+        position: sticky;
+        top: 10vh;
+        margin-left: auto;
         border-radius: 50px 0 0 50px;
         width: 65%;
         height: 80vh;
@@ -158,6 +158,8 @@ section.programme {
     .container {
         display: flex;
         justify-content: flex-end;
+        margin-top: calc(-80vh + 50px);
+        padding-bottom: 200px;
 
         .films {
             display: flex;
@@ -276,8 +278,6 @@ section.programme {
 }
 
 section#contactez-nous {
-    margin-top: 300px;
-    
     .container {
         display: flex;
     }
