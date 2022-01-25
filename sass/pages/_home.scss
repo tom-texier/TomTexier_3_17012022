@@ -97,10 +97,6 @@ main.home .presentation {
             font-family: 'Kaushan Script', cursive;
             font-size: 35px;
         }
-
-        &__text {
-
-        }
     }
 }
 
@@ -131,7 +127,7 @@ main.home .presentation {
 section.programme {
     position: relative;
     padding: 50px 0;
-    margin: 10vh 0;
+    margin: 10vh 0 0;
 
     .background {
         background: $color-primary;
@@ -155,10 +151,26 @@ section.programme {
         }
     }
 
+    .title {
+        position: sticky;
+        top: 90vh;
+        height: max-content;
+
+        h2 {
+            transform: rotate(-90deg) translate(0px, 50px);
+            transform-origin: left center;
+            font-size: 11vh;
+            margin: 0;
+            white-space: nowrap;
+            font-family: "Montserrat", sans-serif;
+            color: $color-secondary;
+        }
+    }
+
     .container {
         display: flex;
         justify-content: flex-end;
-        margin-top: calc(-80vh + 50px);
+        margin-top: calc(-90vh + 50px);
         padding-bottom: 200px;
 
         .films {
@@ -174,6 +186,7 @@ section.programme {
                 border-radius: 20px;
                 overflow: hidden;
                 position: relative;
+                z-index: 1;
 
                 > div {
                     position: absolute;
@@ -277,7 +290,71 @@ section.programme {
     }
 }
 
+section#actualites .swiper {
+    padding-bottom: 50px;
+
+    .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: $color-secondary;
+    }
+
+    .swiper-button {
+        background-color: $color-primary;
+        width: 40px;
+        height: 40px;
+
+        &::after {
+            font-size: 25px;
+            color: $color-text;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &:hover {
+            background-color: $color-secondary;
+
+            &::after {
+                color: #fff;
+            }
+        }
+    }
+
+    article {
+        position: relative;
+        overflow: hidden;
+    
+        img {
+            height: 500px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        > div {
+            position: absolute;
+            bottom: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, .3);
+            color: #fff;
+    
+            h3 {
+                margin-top: 0;
+            }
+    
+            a {
+                color: $color-primary;
+                text-decoration: none;
+    
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 section#contactez-nous {
+    margin-top: 50px;
     .container {
         display: flex;
     }
@@ -288,5 +365,64 @@ section#contactez-nous {
 
     .contact-form {
         width: 50%;
+        padding-right: 20px;
+    }
+
+    .form {
+        > h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        > p {
+            margin-bottom: 20px;
+        }
+
+        &__row {
+            display: flex;
+            justify-content: space-between;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            .form__group:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        &__group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+
+            input, textarea {
+                padding: 10px;
+                border: 1px solid #D3D3D3;
+                border-radius: 0;
+                outline: none;
+
+                &:focus {
+                    border: 1px solid $color-text;
+                }
+            }
+
+            button {
+                background-color: $color-secondary;
+                color: #fff;
+                border: none;
+                border-radius: 0;
+                outline: none;
+                padding: 20px 10px;
+                font-weight: 600;
+                transition: .4s ease;
+                cursor: pointer;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: $color-primary;
+                    color: $color-text;
+                }
+            }
+        }
     }
 }

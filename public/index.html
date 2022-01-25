@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les films de plein air - Parc Monceau</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/3bb07efc5b.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/prefixed/style.css">
     <link rel="icon" type="image/png" href="./img/tickets.png" />
 </head>
@@ -20,16 +25,16 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="./index.html">Accueil</a>
+                        <a href="./index.html#homepage">Accueil</a>
                     </li>
                     <li>
-                        <a href="#au-programme">Programme</a>
+                        <a href="./index.html#au-programme">Programme</a>
                     </li>
                     <li>
-                        <a href="/actualites.html">Actualités</a>
+                        <a href="./index.html#actualites">Actualités</a>
                     </li>
                     <li>
-                        <a href="#contactez-nous">Contactez-nous</a>
+                        <a href="./index.html#contactez-nous">Contactez-nous</a>
                     </li>
                 </ul>
             </nav>
@@ -39,7 +44,7 @@
             <span class="number">2</span>
         </div>
     </header>
-    <main class="home">
+    <main class="home" id="homepage">
         <section class="banner">
             <img src="./img/banniere.jpeg" alt="Banniere" class="banner__image">
             <div class="banner__content container">
@@ -63,6 +68,9 @@
 
         <section class="programme" id="au-programme">
             <div class="background"></div>
+            <div class="title">
+                <h2>au programme</h2>
+            </div>
             <div class="container">
                 <div class="films">
                     <article class="films__item">
@@ -285,11 +293,77 @@
             </div>
         </section>
 
+        <section id="actualites">
+            <div class="container">
+                <h2>Suivez notre actualité...</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide">
+                            <img src="./img/actu1.jpeg" alt="Image de l'article 1">
+                            <div>
+                                <h3>Lorem ipsum dolor sit</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores eveniet natus culpa commodi molestiae.</p>
+                                <a href="#">En savoir plus</a>
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <img src="./img/actu2.jpeg" alt="Image de l'article 2">
+                            <div>
+                                <h3>Lorem ipsum dolor sit</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores eveniet natus culpa commodi molestiae.</p>
+                                <a href="#">En savoir plus</a>
+                            </div>
+                        </article>
+                        <article class="swiper-slide">
+                            <img src="./img/actu1.jpeg" alt="Image de l'article 3">
+                            <div>
+                                <h3>Lorem ipsum dolor sit</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolores eveniet natus culpa commodi molestiae.</p>
+                                <a href="#">En savoir plus</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+    
+                    <div class="swiper-button swiper-button-prev"></div>
+                    <div class="swiper-button swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
         <section id="contactez-nous">
             <div class="container">
                 <div class="contact-form">
-                    <form action="">
+                    <form class="form">
                         <h2>Contactez-nous</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum, facilis aut ratione error praesentium minima quidem dolorum ab suscipit adipisci.</p>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="lastname">Nom</label>
+                                <input type="text" name="lastname" id="lastname">
+                            </div>
+                            <div class="form__group">
+                                <label for="firstname">Prénom</label>
+                                <input type="text" name="firstname" id="firstname">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="message">Message</label>
+                                <textarea name="message" id="message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <button>Envoyer</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="map">
@@ -299,9 +373,50 @@
         </section>
 
     </main>
+
+    <footer id="main-footer">
+        <div class="top">
+            <div class="container">
+                <div class="column">
+                    <img src="./img/tickets.svg" alt="Logo">
+                    <p>Pour rester informer sur le festival de films en plein air, suivez-nous sur les réseaux sociaux</p>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Contactez-nous</h3>
+                    <ul>
+                        <li><a href="tel:"><i class="fas fa-phone"></i> +33 1 00 00 00 00</a></li>
+                        <li><a href="mailto:contact@filmsdepleinair.org"><i class="fas fa-envelope"></i> contact@filmsdepleinair.org</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> 35 Boulevard de Courcelles<br>75008 Paris</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>S'inscrire à notre newsletter</h3>
+                    <form>
+                        <input type="text" placeholder="Votre email">
+                        <button><i class="fas fa-check"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Charte de protection des données</a></li>
+                <li><a href="#">Politique d'utilisation des cookies</a></li>
+            </ul>
+            <ul>
+                <li>Copyright &copy; 2022 - Agence DW</li>
+            </ul>
+        </div>
+    </footer>
     
     <script src="./js/sticky-header.js"></script>
-    <script src="./js/programme.js"></script>
+    <script src="./js/swiper_actus.js"></script>
     <script src="./js/map.js"></script>
 
     <script
