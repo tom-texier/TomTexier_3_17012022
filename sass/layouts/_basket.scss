@@ -1,0 +1,186 @@
+#basket {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &.show {
+        display: flex;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .4;
+        z-index: -1;
+    }
+
+    .content {
+        max-width: 98%;
+        width: 900px;
+        max-height: 95%;
+        overflow-y: auto;
+        background-color: #fff;
+        border-radius: 15px;
+
+        .header {
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #ececec;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                margin: 0;
+                padding-left: 20px;
+            }
+
+            .close {
+                padding: 10px 20px;
+                font-size: 25px;
+                cursor: pointer;
+                transition: .4s ease;
+
+                &:hover {
+                    background-color: #ececec;
+                }
+            }
+        }
+
+        .films {
+            padding: 20px;
+
+            &__item {
+                display: flex;
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+
+                &__image {
+                    width: 220px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    margin-right: 15px;
+                }
+
+                &__title {
+                    font-size: 25px;
+                    margin-top: 0;
+                    margin-bottom: 15px;
+                }
+
+                &__date {
+                    display: flex;
+
+                    div {
+                        background-color: $color-primary;
+                        padding: 5px 10px;
+                        color: $color-text;
+
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                &__quantity {
+                    display: flex;
+                    margin: 30px 0 0;
+
+                    div {
+                        min-width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &.button {
+                            border: 1px solid #ececec;
+                            cursor: pointer;
+
+                            &.less {
+                                border-radius: 35px 0 0 35px;
+                            }
+
+                            &.more {
+                                border-radius: 0 35px 35px 0;
+                            }
+
+                            &:hover {
+                                background-color: #ececec;
+                            }
+                        }
+
+                        &.text {
+                            border-top: 1px solid #ececec;
+                            border-bottom: 1px solid #ececec;
+                        }
+                    }
+                }
+
+                .remove-to-basket {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    color: #fff;
+                    background-color: $color-secondary;
+                    margin-left: 20px;
+                    text-decoration: none;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .footer {
+            border-top: 1px solid #ececec;
+            padding: 20px;
+            position: sticky;
+            bottom: 0;
+            background-color: #fff;
+            display: flex;
+            justify-content: flex-end;
+
+            a {
+                padding: 10px 20px;
+                text-decoration: none;
+                font-weight: 600;
+                transition: .4s ease;
+
+                &:first-of-type {
+                    background-color: $color-secondary;
+                    margin-right: 20px;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: darken($color-secondary, 10%);
+                    }
+                }
+
+                &:last-of-type {
+                    background-color: $color-primary;
+                    color: $color-text;
+
+                    &:hover {
+                        background-color: darken($color-primary, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

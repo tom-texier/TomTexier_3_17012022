@@ -9,10 +9,5 @@ const swiperActus = new Swiper('#actualites .swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
-  },
-  on: {
-    init: function () {
-      console.log('swiper initialized')
-    }
   }
 })
