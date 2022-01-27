@@ -1,3 +1,151 @@
 footer#main-footer {
     margin-top: 100px;
+
+    .top {
+        background-color: $color-secondary;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .column {
+                flex: 1;
+                padding: 70px 20px;
+                
+                p {
+                    color: #fff;
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+
+                    &.contact li {
+                        color: #fff;
+                        display: flex;
+
+                        &:not(:last-child) {
+                            margin-bottom: 14px;
+                        }
+
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                            display: flex;
+                        }
+
+                        i {
+                            margin-right: 15px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                h3 {
+                    font-family: "Kaushan Script", cursive;
+                    color: #fff;
+                    font-size: 25px;
+                    margin: 0 0 14px;
+                }
+
+                .rs-logo {
+                    display: flex;
+                    
+                    li {
+                        a {
+                            color: $color-text;
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            text-decoration: none;
+                            transition: .4s ease;
+
+                            &:hover {
+                                background-color: $color-primary;
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 15px;
+                        }
+                    }
+                }
+
+                form {
+                    display: flex;
+
+                    input {
+                        padding: 10px;
+                        border: none;
+                        border-radius: 0;
+                        outline: none;
+                        display: block;
+                        width: 100%;
+                    }
+
+                    button {
+                        background-color: #fff;
+                        color: $color-text;
+                        border: none;
+                        border-radius: 0;
+                        outline: none;
+                        padding: 15px;
+                        font-weight: 600;
+                        transition: .4s ease;
+                        cursor: pointer;
+                        text-transform: uppercase;
+        
+                        &:hover {
+                            background-color: $color-primary;
+                            color: $color-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        background-color: $color-text;
+
+        .container {
+            padding: 15px 0;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+
+                li {
+                    color: #fff;
+                    
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        transition: .4s ease;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

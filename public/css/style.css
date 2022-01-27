@@ -33,6 +33,20 @@ h2 {
 /**
  * COMPONENTS 
  */
+.logo {
+  font-family: "Kaushan Script", cursive;
+  font-size: 2em;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  text-decoration: none;
+}
+.logo object {
+  width: 40px;
+  margin-right: 10px;
+}
+
 #my-tickets {
   background-color: #fed136;
   position: fixed;
@@ -89,18 +103,6 @@ header#main-header .container {
 header#main-header a {
   text-decoration: none;
 }
-header#main-header .logo {
-  font-family: "Kaushan Script", cursive;
-  font-size: 2em;
-  color: #FFF;
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-}
-header#main-header .logo object {
-  width: 40px;
-  margin-right: 10px;
-}
 header#main-header nav ul {
   list-style-type: none;
   display: flex;
@@ -127,6 +129,126 @@ header#main-header.sticky nav li a {
 
 footer#main-footer {
   margin-top: 100px;
+}
+footer#main-footer .top {
+  background-color: #bf0603;
+}
+footer#main-footer .top .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer#main-footer .top .container .column {
+  flex: 1;
+  padding: 70px 20px;
+}
+footer#main-footer .top .container .column p {
+  color: #fff;
+}
+footer#main-footer .top .container .column ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer#main-footer .top .container .column ul.contact li {
+  color: #fff;
+  display: flex;
+}
+footer#main-footer .top .container .column ul.contact li:not(:last-child) {
+  margin-bottom: 14px;
+}
+footer#main-footer .top .container .column ul.contact li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+}
+footer#main-footer .top .container .column ul.contact li i {
+  margin-right: 15px;
+  font-size: 18px;
+}
+footer#main-footer .top .container .column h3 {
+  font-family: "Kaushan Script", cursive;
+  color: #fff;
+  font-size: 25px;
+  margin: 0 0 14px;
+}
+footer#main-footer .top .container .column .rs-logo {
+  display: flex;
+}
+footer#main-footer .top .container .column .rs-logo li a {
+  color: #333333;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+footer#main-footer .top .container .column .rs-logo li a:hover {
+  background-color: #fed136;
+}
+footer#main-footer .top .container .column .rs-logo li:not(:last-child) {
+  margin-right: 15px;
+}
+footer#main-footer .top .container .column form {
+  display: flex;
+}
+footer#main-footer .top .container .column form input {
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  display: block;
+  width: 100%;
+}
+footer#main-footer .top .container .column form button {
+  background-color: #fff;
+  color: #333333;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  padding: 15px;
+  font-weight: 600;
+  transition: 0.4s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+footer#main-footer .top .container .column form button:hover {
+  background-color: #fed136;
+  color: #333333;
+}
+footer#main-footer .bottom {
+  background-color: #333333;
+}
+footer#main-footer .bottom .container {
+  padding: 15px 0;
+}
+footer#main-footer .bottom .container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer#main-footer .bottom .container ul:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer#main-footer .bottom .container ul li {
+  color: #fff;
+}
+footer#main-footer .bottom .container ul li:not(:last-child) {
+  margin-right: 15px;
+}
+footer#main-footer .bottom .container ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+footer#main-footer .bottom .container ul li a:hover {
+  color: #fed136;
 }
 
 /**
