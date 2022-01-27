@@ -34,6 +34,7 @@ header#main-header {
     &.sticky {
         background-color: $color-secondary;
         box-shadow: 0 0 10px -5px rgba(0, 0, 0, .5);
+        position: sticky;
         
         nav li a {
             padding: 20px 10px;

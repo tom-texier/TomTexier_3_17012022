@@ -285,6 +285,32 @@ section.programme {
                         font-weight: 500;
                     }
                 }
+
+                &__quantity {
+                    display: flex;
+                    margin: 30px 0 0;
+                    position: absolute;
+                    bottom: 10px;
+                
+                    div {
+                        color: #fff;
+                        font-weight: 600;
+
+                        &.button {
+                            border: 1px solid $color-primary;
+                
+                            &:hover {
+                                background-color: $color-primary;
+                                color: $color-text;
+                            }
+                        }
+                
+                        &.text {
+                            border-top: 1px solid $color-primary;
+                            border-bottom: 1px solid $color-primary;
+                        }
+                    }
+                }
             }
         }
     }
@@ -366,63 +392,5 @@ section#contactez-nous {
     .contact-form {
         width: 50%;
         padding-right: 20px;
-    }
-
-    .form {
-        > h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
-        > p {
-            margin-bottom: 20px;
-        }
-
-        &__row {
-            display: flex;
-            justify-content: space-between;
-
-            &:not(:last-child) {
-                margin-bottom: 20px;
-            }
-
-            .form__group:not(:last-child) {
-                margin-right: 10px;
-            }
-        }
-
-        &__group {
-            display: flex;
-            flex-direction: column;
-            flex: 1;
-
-            input, textarea {
-                padding: 10px;
-                border: 1px solid #D3D3D3;
-                border-radius: 0;
-                outline: none;
-
-                &:focus {
-                    border: 1px solid $color-text;
-                }
-            }
-
-            button {
-                background-color: $color-secondary;
-                color: #fff;
-                border: none;
-                border-radius: 0;
-                outline: none;
-                padding: 20px 10px;
-                font-weight: 600;
-                transition: .4s ease;
-                cursor: pointer;
-                text-transform: uppercase;
-
-                &:hover {
-                    background-color: $color-primary;
-                    color: $color-text;
-                }
-            }
-        }
     }
 }

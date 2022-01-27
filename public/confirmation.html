@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmez votre préinscription - Les films de Plein Air</title>
+
+    <script src="https://kit.fontawesome.com/3bb07efc5b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/prefixed/style.css">
+    <link rel="icon" type="image/png" href="./img/tickets.png" />
+</head>
+
+<body>
+
+    <header id="main-header" class="sticky">
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <object data="./img/tickets.svg" type="image/svg+xml"></object>
+                Les films de plein air
+            </a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html#homepage">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#au-programme">Programme</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#actualites">Actualités</a>
+                    </li>
+                    <li>
+                        <a href="./index.html#contactez-nous">Contactez-nous</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="my-tickets">
+            <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
+            <span class="number">6</span>
+        </div>
+    </header>
+
+    <div class="container page-confirmation">
+        <aside class="recap">
+            <div class="header">
+                <h3>Votre sélection</h3>
+            </div>
+            <div class="films">
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/theartist.jpeg" alt="Affiche de The Artist">
+                    <div>
+                        <h4 class="films__item__title">The Artist</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 5 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 20h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">2</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/lepianiste.jpeg" alt="Affiche de Le Pianiste">
+                    <div>
+                        <h4 class="films__item__title">Le Pianiste</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 7 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 18h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">1</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/intouchables.jpeg" alt="Affiche de Intouchables">
+                    <div>
+                        <h4 class="films__item__title">Intouchables</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 8 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 18h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">2</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/roubaixunelumiere.jpeg" alt="Affiche de Roubaix, une lumière">
+                    <div>
+                        <h4 class="films__item__title">Roubaix, une lumière</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 8 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 22h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">1</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Confirmez votre sélection</h1>
+            <p>Pour vous préinscrire aux projections sélectionnées, veuillez renseigner les informations ci-dessous.</p>
+            <form class="form">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div class="form__group">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="form__group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                </div>
+                <div class="form__row">
+                    <div class="form__group">
+                        <button>Je me préinscris</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer id="main-footer">
+        <div class="top">
+            <div class="container">
+                <div class="column">
+                    <a href="./index.html" class="logo">
+                        <object data="./img/tickets.svg" type="image/svg+xml"></object>
+                        Les films de plein air
+                    </a>
+                    <p>Pour rester informé sur le festival de films en plein air, suivez-nous sur les réseaux sociaux.</p>
+                    <ul class="rs-logo">
+                        <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Contactez-nous</h3>
+                    <ul class="contact">
+                        <li><a href="tel:"><i class="fas fa-phone"></i> +33 1 00 00 00 00</a></li>
+                        <li><a href="mailto:contact@filmsdepleinair.org"><i class="fas fa-envelope"></i> contact@filmsdepleinair.org</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> 35 Boulevard de Courcelles<br>75008 Paris</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>S'inscrire à notre newsletter</h3>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir notre actualité.</p>
+                    <form>
+                        <input type="text" placeholder="Votre email">
+                        <button><i class="fas fa-check"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Charte de protection des données</a></li>
+                    <li><a href="#">Politique d'utilisation des cookies</a></li>
+                </ul>
+                <ul>
+                    <li>Copyright &copy; 2022 - Agence DW</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div id="basket" class="recap">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="header">
+                <h3>Votre sélection</h3>
+                <div class="close">&times;</div>
+            </div>
+            <div class="films">
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/theartist.jpeg" alt="Affiche de The Artist">
+                    <div>
+                        <h4 class="films__item__title">The Artist</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 5 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 20h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">2</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/lepianiste.jpeg" alt="Affiche de Le Pianiste">
+                    <div>
+                        <h4 class="films__item__title">Le Pianiste</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 7 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 18h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">1</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/intouchables.jpeg" alt="Affiche de Intouchables">
+                    <div>
+                        <h4 class="films__item__title">Intouchables</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 8 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 18h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">2</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/roubaixunelumiere.jpeg" alt="Affiche de Roubaix, une lumière">
+                    <div>
+                        <h4 class="films__item__title">Roubaix, une lumière</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 8 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 22h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">1</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="footer">
+                <a href="./index.html#au-programme" class="close" role="button">Continuer ma sélection</a>
+                <a href="./confirmation.html" role="button">Je me préinscris</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/basket.js"></script>
+
+</body>
+
+</html>

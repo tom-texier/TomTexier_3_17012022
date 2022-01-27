@@ -1,0 +1,47 @@
+.page-confirmation {
+    display: flex;
+
+    aside.recap {
+        width: 33%;
+        padding: 0 20px 20px;
+        border-right: 1px solid #ececec;
+
+        .header {
+            padding: 20px 0;
+            position: sticky;
+            top: 58px;
+            background-color: #fff;
+
+            h3 {
+                margin: 0;
+                font-size: 25px;
+                font-family: "Kaushan Script", cursive;
+            }
+        }
+
+        .films {
+            padding: 0;
+
+            &__item__title {
+                font-size: 18px;
+            }
+        }
+    }
+
+    main {
+        width: 66%;
+        height: max-content;
+        padding: 0 20px;
+        position: sticky;
+        top: 10vh;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .form button {
+            padding: 15px;
+            width: max-content;
+        }
+    }
+}

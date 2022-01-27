@@ -1,0 +1,53 @@
+.recap .films {
+    padding: 20px;
+
+    &__item {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        &__image {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin-right: 15px;
+        }
+
+        &__title {
+            font-size: 25px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        &__date {
+            display: flex;
+
+            div {
+                background-color: $color-primary;
+                padding: 5px 10px;
+                color: $color-text;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .remove-to-basket {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            background-color: $color-secondary;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 13px;
+        }
+    }
+}

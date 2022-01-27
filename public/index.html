@@ -41,7 +41,7 @@
         </div>
         <div id="my-tickets">
             <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
-            <span class="number">2</span>
+            <span class="number">6</span>
         </div>
     </header>
     <main class="home" id="homepage">
@@ -59,7 +59,7 @@
                     <img src="./img/popcorn.jpg" alt="popcorn">
                 </div>
                 <div class="presentation__content">
-                    <h2 class="presentation__content__title">Lorem ipsum dolor sit amet</h2>
+                    <h2 class="presentation__content__title">Notre festival de films</h2>
                     <p class="presentation__content__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quisquam iure dolorem suscipit enim, illo minus vero dolorum optio facilis cumque qui, ducimus consequatur recusandae sapiente repellendus, distinctio labore aut harum tenetur. Aperiam aliquam, id exercitationem saepe at eum. At excepturi officiis facere eaque modi dignissimos quasi, voluptas id vel?<br><br>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut quas dolores quidem quod iste exercitationem repellendus harum culpa illum tempora dolor doloremque laborum quaerat, non, labore voluptatem. Minima ipsam voluptatem animi repellat consequuntur, magni enim ipsa quas. Maiores nesciunt, repellat corrupti soluta esse recusandae consequatur sunt consectetur, optio neque accusamus.</p>
                 </div>
@@ -103,9 +103,10 @@
                                     20h
                                 </div>
                             </div>
-                            <div class="add-to-basket">
-                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
-                                <span>+</span>
+                            <div class="films__item__quantity">
+                                <div class="button less">-</div>
+                                <div class="text">2</div>
+                                <div class="button more">+</div>
                             </div>
                         </div>
                     </article>
@@ -193,9 +194,10 @@
                                     18h
                                 </div>
                             </div>
-                            <div class="add-to-basket">
-                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
-                                <span>+</span>
+                            <div class="films__item__quantity">
+                                <div class="button less">-</div>
+                                <div class="text">1</div>
+                                <div class="button more">+</div>
                             </div>
                         </div>
                     </article>
@@ -247,9 +249,10 @@
                                     18h
                                 </div>
                             </div>
-                            <div class="add-to-basket">
-                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
-                                <span>+</span>
+                            <div class="films__item__quantity">
+                                <div class="button less">-</div>
+                                <div class="text">2</div>
+                                <div class="button more">+</div>
                             </div>
                         </div>
                     </article>
@@ -283,9 +286,10 @@
                                     22h
                                 </div>
                             </div>
-                            <div class="add-to-basket">
-                                <img src="./img/tickets.svg" alt="Icone de ticket de cinéma">
-                                <span>+</span>
+                            <div class="films__item__quantity">
+                                <div class="button less">-</div>
+                                <div class="text">1</div>
+                                <div class="button more">+</div>
                             </div>
                         </div>
                     </article>
@@ -429,7 +433,7 @@
         </div>
     </footer>
 
-    <div id="basket">
+    <div id="basket" class="recap">
         <div class="overlay"></div>
         <div class="content">
             <div class="header">
@@ -437,6 +441,28 @@
                 <div class="close">&times;</div>
             </div>
             <div class="films">
+                <article class="films__item">
+                    <img class="films__item__image" src="./img/affiches/theartist.jpeg" alt="Affiche de The Artist">
+                    <div>
+                        <h4 class="films__item__title">The Artist</h4>
+                        <div class="films__item__date">
+                            <div class="films__item__date__day">
+                                <i class="far fa-calendar-alt"></i> 5 août 2022
+                            </div>
+                            <div class="films__item__date__hour">
+                                <i class="far fa-clock"></i> 20h
+                            </div>
+                        </div>
+                        <div class="films__item__quantity">
+                            <div class="button less">-</div>
+                            <div class="text">2</div>
+                            <div class="button more">+</div>
+                            <a class="remove-to-basket" href="#" role="button">
+                                <i class="far fa-trash-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
                 <article class="films__item">
                     <img class="films__item__image" src="./img/affiches/lepianiste.jpeg" alt="Affiche de Le Pianiste">
                     <div>
@@ -505,7 +531,7 @@
                 </article>
             </div>
             <div class="footer">
-                <a class="close" role="button">Continuer ma sélection</a>
+                <a href="#au-programme" class="close" role="button">Continuer ma sélection</a>
                 <a href="./confirmation.html" role="button">Je me préinscris</a>
             </div>
         </div>
