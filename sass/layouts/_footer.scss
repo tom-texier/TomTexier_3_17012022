@@ -11,9 +11,28 @@ footer#main-footer {
             .column {
                 flex: 1;
                 padding: 70px 20px;
+
+                @include mobile {
+                    flex: unset;
+                    width: calc(100% - 40px);
+
+                    &:nth-of-type(2) {
+                        padding: 0 20px;
+                    }
+                }
+
+                @include mobile {
+                    .logo {
+                        justify-content: center;
+                    }
+                }
                 
                 p {
                     color: #fff;
+
+                    @include mobile {
+                        text-align: center;
+                    }
                 }
 
                 ul {
@@ -24,6 +43,11 @@ footer#main-footer {
                     &.contact li {
                         color: #fff;
                         display: flex;
+
+                        @include mobile {
+                            justify-content: center;
+                            text-align: center;
+                        }
 
                         &:not(:last-child) {
                             margin-bottom: 14px;
@@ -47,10 +71,18 @@ footer#main-footer {
                     color: #fff;
                     font-size: 25px;
                     margin: 0 0 14px;
+
+                    @include mobile {
+                        text-align: center;
+                    }
                 }
 
                 .rs-logo {
                     display: flex;
+
+                    @include mobile {
+                        justify-content: center;
+                    }
                     
                     li {
                         a {
@@ -124,6 +156,10 @@ footer#main-footer {
                 justify-content: center;
                 align-items: center;
 
+                @include mobile {
+                    flex-direction: column;
+                }
+
                 &:not(:last-child) {
                     margin-bottom: 10px;
                 }
@@ -133,6 +169,11 @@ footer#main-footer {
                     
                     &:not(:last-child) {
                         margin-right: 15px;
+
+                        @include mobile {
+                            margin-right: 0;
+                            margin-bottom: 10px;
+                        }
                     }
 
                     a {

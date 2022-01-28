@@ -4,6 +4,10 @@
     &__item {
         display: flex;
 
+        @include mobile {
+            flex-direction: column;
+        }
+
         &:not(:last-child) {
             margin-bottom: 20px;
         }
@@ -14,16 +18,28 @@
             object-fit: cover;
             border-radius: 20px;
             margin-right: 15px;
+
+            @include mobile {
+                margin: 0 auto!important;
+            }
         }
 
         &__title {
             font-size: 25px;
             margin-top: 0;
             margin-bottom: 15px;
+
+            @include mobile {
+                text-align: center;
+            }
         }
 
         &__date {
             display: flex;
+
+            @include mobile {
+                justify-content: center;
+            }
 
             div {
                 background-color: $color-primary;
