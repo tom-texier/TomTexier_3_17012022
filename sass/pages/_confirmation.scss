@@ -6,11 +6,19 @@
         padding: 0 20px 20px;
         border-right: 1px solid #ececec;
 
+        @include mobile {
+            width: 100%;
+        }
+
         .header {
             padding: 20px 0;
             position: sticky;
             top: 58px;
             background-color: #fff;
+
+            @include mobile {
+                position: static;
+            }
 
             h3 {
                 margin: 0;
@@ -21,6 +29,13 @@
 
         .films {
             padding: 0;
+
+            @include mobile {
+                &__item__image {
+                    width: 220px;
+                    height: 300px;
+                }
+            }
 
             &__item__title {
                 font-size: 18px;
@@ -35,13 +50,32 @@
         position: sticky;
         top: 10vh;
 
+        @include mobile {
+            width: 100%;
+        }
+
         h1 {
             margin-top: 0;
+            
+            @include mobile {
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+
+        @include mobile {
+            p {
+                text-align: center;
+            }
         }
 
         .form button {
             padding: 15px;
             width: max-content;
+
+            @include mobile {
+                margin: auto;
+            }
         }
     }
 }
